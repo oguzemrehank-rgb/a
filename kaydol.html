@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KODE - Kaydol">
+    <title>KODE - Kaydol</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">KODE</div>
+                <div class="theme-toggle">
+                    <button id="theme-toggle-btn" class="theme-btn">🌙</button>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="kode-nedir.html">KODE Nedir</a></li>
+                    <li><a href="ekibimiz.html">Ekibimiz</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="sss.html">SSS</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+                <div class="user-menu" id="user-menu">
+                    <button id="login-btn">Giriş Yap</button>
+                    <button id="register-btn">Kaydol</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Register Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Kaydol</h2>
+            </div>
+            <div style="max-width: 500px; margin: 0 auto;">
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="username">Kullanıcı Adı:</label>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-posta:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon Numarası:</label>
+                        <div class="phone-input">
+                            <select id="country-code">
+                                <option value="+90">🇹🇷 +90</option>
+                                <option value="+1">🇺🇸 +1</option>
+                                <option value="+44">🇬🇧 +44</option>
+                                <!-- Daha fazla ülke eklenebilir -->
+                            </select>
+                            <input type="tel" id="phone" placeholder="Telefon numarası" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Şifre:</label>
+                        <div class="password-input">
+                            <input type="password" id="password" required>
+                            <button type="button" id="toggle-password" class="toggle-btn">👁️</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Şifre (Tekrar):</label>
+                        <div class="password-input">
+                            <input type="password" id="confirm-password" required>
+                            <button type="button" id="toggle-confirm-password" class="toggle-btn">👁️</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="captcha" required>
+                            Kesinlikle robot değilim.
+                        </label>
+                    </div>
+                    <button type="submit" class="cta-button">Kaydol</button>
+                </form>
+                <p style="text-align: center; margin-top: 1rem;">
+                    Zaten hesabınız var mı? <a href="giris.html">Giriş Yap</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
